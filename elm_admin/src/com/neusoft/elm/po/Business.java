@@ -1,79 +1,73 @@
 package com.neusoft.elm.po;
 
 public class Business {
-	 private Integer businessId;
-	 private String password;
-	 private String businessName;
-	 private String businessAddress;
-	 private String businessExplain;
-	 private Double starPrice;
-	 private Double deliveryPrice;
+    private Integer businessId;
+    private String password;
+    private String businessName;
+    private String businessAddress;
+    private String businessExplain;
+    private Double starPrice;
+    private Double deliveryPrice;
 
-	 @Override
-	 public String toString() {
-	 return "\n商家编号："+this.businessId+
-	 "\n商家名称："+this.businessName+
-	 "\n商家地址："+this.businessAddress+
-	 "\n商家介绍："+this.businessExplain+
-	 "\n起送费：¥"+this.starPrice+
-	 "\n配送费：¥"+this.deliveryPrice+"\n";
-	 }
+    public Integer getBusinessId() {
+        return businessId;
+    }
 
-	public Integer getBusinessId() {
-		return businessId;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setBusinessId(Integer businessId) {
-		this.businessId = businessId;
-	}
+    public Double getDeliveryPrice() {
+        return deliveryPrice;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setDeliveryPrice(Double deliveryPrice) {
+        this.deliveryPrice = deliveryPrice;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public Double getStarPrice() {
+        return starPrice;
+    }
 
-	public String getBusinessName() {
-		return businessName;
-	}
+    public void setStarPrice(Double starPrice) {
+        this.starPrice = starPrice;
+    }
 
-	public void setBusinessName(String businessName) {
-		this.businessName = businessName;
-	}
+    public String getBusinessExplain() {
+        return businessExplain;
+    }
 
-	public String getBusinessAddress() {
-		return businessAddress;
-	}
+    public void setBusinessExplain(String businessExplain) {
+        this.businessExplain = businessExplain;
+    }
 
-	public void setBusinessAddress(String businessAddress) {
-		this.businessAddress = businessAddress;
-	}
+    public String getBusinessAddress() {
+        return businessAddress;
+    }
 
-	public String getBusinessExplain() {
-		return businessExplain;
-	}
+    public void setBusinessAddress(String businessAddress) {
+        this.businessAddress = businessAddress;
+    }
 
-	public void setBusinessExplain(String businessExplain) {
-		this.businessExplain = businessExplain;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public Double getStarPrice() {
-		return starPrice;
-	}
+    public void setBusinessId(Integer businessId) {
+        this.businessId = businessId;
+    }
 
-	public void setStarPrice(Double starPrice) {
-		this.starPrice = starPrice;
-	}
+    public String getBusinessName() {
+        return businessName;
+    }
 
-	public Double getDeliveryPrice() {
-		return deliveryPrice;
-	}
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
 
-	public void setDeliveryPrice(Double deliveryPrice) {
-		this.deliveryPrice = deliveryPrice;
-	}
-
-	 
+    @Override
+    public String toString() {
+        return "\n商家编号："+this.businessId+"\n商家名称："+this.businessName+"\n商家地址："+this.businessAddress+
+                "\n商家介绍："+this.businessExplain+"\n起送费："+this.starPrice+"\n配送费："+this.deliveryPrice;
+    }
 }
